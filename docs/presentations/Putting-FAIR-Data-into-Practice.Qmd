@@ -1,0 +1,9 @@
+title: "Dr. Short/Dr. Martin Lab Meeting - Putting FAIR Data into Practice"
+date: "October 11, 2024"
+author: "Andrew Antaya - Data Coordinator"
+format:
+  pptx:
+    reference-doc: ../templates/presentations/Wide-format-SDSU-PowerPoint-Template.pptx
+editor: visual
+---
+
