@@ -112,7 +112,6 @@ Domain-Specific Repositories:
 - BioLINCC (biolincc.nhlbi.nih.gov)
 
 ::: notes
-
 AgData Commons: A data repository run by the USDA that makes data produced by USDA research available to the public.
 
 For example, for most USDA projects (but apparently not the Climate Smart Project) you are highly encouraged to archive your data in the AgData Commons. The AgData Commons is a domain-specific repository that makes data produced by USDA research available to the public. The AgData Commons is a great place to archive your data if you are working on a USDA project. I've archived virtual fence data in the AgData Commons for a project that I worked on at the University of Arizona.
@@ -137,6 +136,8 @@ Can my data be access programatically by a machine (through an API)?
 
 ::: notes
 Putting the "A" in FAIR data is all about making your data accessible to others. There are two main ways that you can make your data accessible: through a user interface on a website and through an API that allows others to access your data programatically.
+
+Accessiblility can be easily accomplished by uploading your data to a repository such as Dryad, Dataverse, Zenodo, or Figshare. These repositories provide a user interface that allows others to download your data.
 :::
 
 ## Examples of Accessible Data on a Website
@@ -181,7 +182,108 @@ Key Questions to Ask to Make Your Data Interoperable:
 Putting the "I" in FAIR data is all about making your data interoperable with others. There are three main ways that you can make your data interoperable: by choosing the right format, avoiding proprietary file formats, and following standards within your field or discipline.
 :::
 
-## Examples of Interoperable Data
+## Interoperable Data Formats
+
+::: incremental
+- CSV (Comma-Separated Values)
+- JSON (JavaScript Object Notation)
+- XML (eXtensible Markup Language)
+:::
+
+::: notes
+When choosing what format to archive your data in, I recommend that you choose a format that is widely used and supported by others. For example, CSV (Comma-Separated Values) is a widely used format that is supported by most software programs, such as R, Python, and Excel. JSON (JavaScript Object Notation) and XML (eXtensible Markup Language) are also widely used formats that are supported by many software programs.
+:::
+
+## Proprietary File Formats
+
+::: incremental
+- Microsoft Excel (.xls, .xlsx)
+- STATA
+- SPSS
+
+::: notes
+Examples of proprietary file formats include Microsoft Excel (.xls, .xlsx), STATA, and SPSS. These file formats are proprietary in that they are owned by a specific company and require a software license to access and use the data. Proprietary file formats can make your data less interoperable with others, especially if they require expensive software licenses. Try to avoid archiving your data in a proprietary file format if possible.
+
+Now that's not to say you can't use STATA and SPSS file formats during your analysis. STATA and SPSS files have some advatanges over CSV files. However, I recommend that you convert your data to a non-proprietary format before archiving it, for example, by converting your data from a STATA file to a CSV file before archiving it. This will make your data more interoperable with others.
+
+Microsoft Excel, while a proprietary file format, is widely used and supported and can be a good choice for archiving your data. However, be aware that Excel has some limitations, such as the number of rows and columns that it can handle. If you are working with a large dataset, you may want to consider archiving your data in a different format, such as CSV.
+
+In other situations, there simply isn't a way around proprietary file formats. For example, if you are working with a proprietary software program that only outputs data in a proprietary format, you may have no choice but to archive your data in a proprietary format. In this case, I recommend that you provide detailed instructions on how to access and use the data in the README file that accompanies your data.
+:::
+
+## "R" in FAIR Data
+
+Key Questions to Ask to Make Your Data Reusable:
+
+::: incremental
+- Is there enough metadata for others to understand and reuse our data?
+- What metadata standards should we use?
+:::
+
+::: notes
+Perhaps the most important aspect of FAIR data is making your data reusable by others (including your future self). There are two main ways that you can make your data reusable: by providing rich metadata and following metadata standards.
+
+Metadata is data about data. It describes the content, quality, condition, and other characteristics of your data. Metadata can include information such as the title, authors, abstract, keywords, license, and provenance of your data. Metadata can be stored in a README file that accompanies your data or it can be stored as comments in your data file. I prefer to store metadata in a README file that accompanies my data, as it keeps the metadata separate from the data and makes it easier to update the metadata without having to update the data.
+
+Of all of the acronyms in FAIR, I think that the "R" is the most important. If your data is not reusable by others, then what's the point of making it findable, accessible, and interoperable? I also think reusability requires the most amount of work.
+
+Adding metadata during your project reduces your "data curation debt". Data curation debt is the amount of work that you need to do to make your data FAIR at the end of your project. The more metadata you add during your project, the less data curation debt you will have at the end of your project. I recommend that you add metadata as you go along, rather than waiting until the end of your project to add metadata.
+:::
+
+## Levels of Metadata
+
+::: incremental
+- Project Level Metadata
+- Dataset Level Metadata
+- Variable Level Metadata
+:::
+
+## Project Level Metadata
+
+::: incremental
+- Data Management Plan
+- Data Sources Catalog
+- Roles and Responsibilities
+- Research Protocol
+- Standard Operating Proceedures (SOPs)
+:::
+
+## Dataset Level Metadata
+
+::: incremental
+- README
+- Changelog
+- Data Cleaning Plan
+:::
+
+## Variable Level Metadata
+
+::: incremental
+- Data Dictionary
+- Codebook
+:::
+
+## Metadata Standards
+
+::: incremental
+- Ecological Metadata Language (EML)
+- Darwin Core
+- Content Standard for Digital Geospatial Metadata (CSDGM) (FGDC metadata standard)
+:::
+
+::: notes
+There are many metadata standards that you can use to describe your data. Some metadata standards are general-purpose, such as the Ecological Metadata Language (EML), while others are domain-specific, such as Darwin Core for biodiversity data and the Content Standard for Digital Geospatial Metadata (CSDGM) for geospatial data.
+
+I recommend that you use a metadata standard that is widely used and supported by others in your field. For example, if you are working with biodiversity data, you may want to use Darwin Core to describe your data. If you are working with geospatial data, you may want to use CSDGM to describe your data. Using a widely used metadata standard makes it easier for others to understand and reuse your data.
+
+Additionally, where you choose to archive your data may have specific requirements regarding the metadata standard. Check with the repository to see if they have specific requirements for the metadata standard that you should use.
+
+Be warned, metadata standards have a steep learning curve. I would recommend that you first identify which metadata standard is relevant to your field, and then find a digital tool that can help you create metadata in that standard. For example, I use the EML templating tool to create EML metadata for my data. I have included links to these tools in the Additional Resources section at the end of this presentation.
+:::
+
+## Metadata Standards Table
+
+![Metadata Standards Table from Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/img/fig8-20.PNG)
 
 ## Why make data FAIR (from a grad student's perspective)?
 
@@ -220,6 +322,9 @@ Lastly, I recommend that you don't wait until the end of your project to make yo
 
 ## Links to Additional Resources
 
-https://datamgmtinedresearch.com/
-https://www.nlm.nih.gov/NIHbmic/generalist_repositories.html
-https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
+DMPTool - https://dmptool.org/
+How SHould I Include Dryad in my DMP? https://blog.datadryad.org/2023/07/13/for-researchers-including-dryad-in-your-data-management-plan/
+Data Management in Large-Scale Education Research eBook: https://datamgmtinedresearch.com/
+General Repositories - https://www.nlm.nih.gov/NIHbmic/generalist_repositories.html
+Specialized Repositories - https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
+EML Creation Tool - https://ezeml.edirepository.org/
