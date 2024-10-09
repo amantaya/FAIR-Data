@@ -1,10 +1,10 @@
 ---
-title: "Dr. Short/Dr. Martin Lab Meeting - Putting FAIR Data into Practice"
+title: "Dr. Short & Dr. Martin /n Lab Meeting - Putting FAIR Data into Practice"
 date: "October 11, 2024"
 author: "Andrew Antaya - Data Coordinator"
 format:
   pptx:
-    reference-doc: Wide-format-SDSU-PowerPoint-Template.pptx
+    reference-doc: ../templates/Wide-format-SDSU-PowerPoint-Template.pptx
 editor: visual
 ---
 
@@ -18,6 +18,8 @@ editor: visual
 6. Implementing The "A" in FAIR Data
 7. Implementing The "I" in FAIR Data
 8. Implementing The "R" in FAIR Data
+9. My Advice for Graduate Students
+10. Links to Additional Resources
 :::
 
 ## My Background
@@ -29,6 +31,195 @@ editor: visual
 - Hired as Data Coordinator for the SDSU Climate Smart Project in July 2024
 :::
 
+## The Data Management Lifecycle
+
+![OSF Data Management Lifecycle](https://pose.open.ubc.ca/files/2020/10/research_lifecycle.original.png)
+
 ## FAIR Data Refresher
 
+**F**indable
 
+How can other researchers find your data?
+
+
+## FAIR Data Refresher
+
+**A**ccessible
+
+Can your data be easily accessed through a user interface or programatically by a machine?
+
+## FAIR Data Refresher
+
+**I**nteroperable
+
+Is your data in a format that can be easily used by others?
+
+## FAIR Data Refresher
+
+**R**eusable
+
+Is there enough metadata for other researchers to understand and reuse your data?
+
+## Key Aspects of FAIR
+
+::: incremental
+- FAIR is a set of principles, *not an implmentation*
+- It's up to you (and your advisor) to make these decisions
+- There are many options, no one choice is best
+:::
+
+## "F" in FAIR Data
+
+Key Questions to Ask to Make Your Data Findable:
+
+::: incremental
+- Where will we archive the data at the end of the project?
+- Does the funder have specific requirements for data archiving?
+- Is there a domain-specific repository that we should use?
+:::
+
+## Examples of Findable Data
+
+General Purpose Repositories:
+::: incremental
+- Dryad (datadryad.org)
+- Dataverse (dataverse.org)
+- Zenodo (zenodo.org)
+- Figshare (figshare.com)
+:::
+
+::: notes
+Dryad: A general-purpose repository that makes the data underlying scientific publications discoverable, freely reusable, and citable.
+
+Dataverse: A general-purpose repository that allows researchers to deposit, share, and archive their data. Dataverse is an open-source platform developed by the Institute for Quantitative Social Science at Harvard University.
+
+Zenodo: A general-purpose repository that allows researchers to deposit data, software, and other research outputs. I have used Zenodo to create DOIs for pieces of software that I have developed. One of the cool things about Zenodo is that it integrates with GitHub, so you can create a DOI for a specific release of your software.
+
+Figshare: A general-purpose repository that allows researchers to share their research outputs, including data, figures, and other research outputs.
+
+All of these repositories allow you to create a DOI for your data, which makes it easier for others to cite your data in their publications. DOIs are guarenteed to be stable over time. This can increase the visibility and impact of your work.
+
+You can pick one of these repositories to archive your data, or you can use multiple repositories. It's up to you (and your advisor) to make these decisions. There are many options, and no one choice is best. I recommend that you discuss your options with your advisor and other members of your lab before you start archiving your data.
+:::
+
+## Examples of Findable Data
+
+Domain-Specific Repositories:
+
+::: incremental
+- AgData Commons (agdatacommons.nal.usda.gov)
+- ICPSR (icpsr.umich.edu)
+- BioLINCC (biolincc.nhlbi.nih.gov)
+
+::: notes
+
+AgData Commons: A data repository run by the USDA that makes data produced by USDA research available to the public.
+
+For example, for most USDA projects (but apparently not the Climate Smart Project) you are highly encouraged to archive your data in the AgData Commons. The AgData Commons is a domain-specific repository that makes data produced by USDA research available to the public. The AgData Commons is a great place to archive your data if you are working on a USDA project. I've archived virtual fence data in the AgData Commons for a project that I worked on at the University of Arizona.
+
+ICPSR: 	(Inter-university Consortium for Political and Social Research) A data repository run by the University of Michigan that makes data available to the public. ICPSR specializes in social science data, such as surveys and polls.
+
+BioLINCC: A data repository run by the National Heart, Lung, and Blood Institute (NHLBI) that makes data available to the public. BioLINCC specializes in biospecimens and related data, such as blood and tissue samples.
+
+There are many domain-specific repositories that you can use to archive your data. I recommend that you check with your advisor or the funder's website to see if there is a domain-specific repository that you should use. Some funders require that you archive your data in a specific repository, so be sure to check with your advisor or the funder's website for specific requirements. NSF and NIH typically require you to archive your data at the end of the project in one of their repositories.
+
+NIH maintains lists of domain-specific repositories that you can use to archive your data. I have included links to these lists in the Additional Resources section at the end of this presentation.
+:::
+
+## "A" in FAIR Data
+
+Key Questions to Ask to Make Your Data Accessible:
+
+::: incremental
+Can my data be accessed through an user interface on a website?
+Can my data be access programatically by a machine (through an API)?
+:::
+
+::: notes
+Putting the "A" in FAIR data is all about making your data accessible to others. There are two main ways that you can make your data accessible: through a user interface on a website and through an API that allows others to access your data programatically.
+:::
+
+## Examples of Accessible Data on a Website
+
+![Screenshot Example of Accessible Dataset on Dryad's Website](../attachments/example-accessible-dryad-dataset.jpg)
+
+::: notes
+Almost all repositories provide a user interface that allows others to download your data. For example, here is an example of a dataset on Dryad. You can see that the dataset is well-documented with rich metadata, such as the title, authors, abstract, keywords, and license.
+:::
+
+## Examples of Accessible Data Programatically
+
+![Screenshot Example of Accessible Data Through Dryad's API](../attachments/example-accessible-dryad-api.jpg)
+
+::: notes
+Increasingly, most repositories also provide an API that allows others to access your data programatically. For example, Dryad provides an API that allows others to access the metadata and download datasets from Dryad.
+
+As the amount of publicly available data continues to grow, APIs are becoming more important for accessing data programatically as it allows researchers to automate the process of downloading data. For example, you could write an R script to download all datasets in a repository that match a specific keyword or author for conducting a meta-analysis. This would be much faster than downloading each dataset manually.
+:::
+
+## Examples of Accessible Data Programatically
+
+![Screenshot Example of Accessible Data Through Zenodo's API](../attachments/example-accessible-zenodo-api.jpg)
+
+::: notes
+Most of the general-purpose repositories also have good documentation for their APIs. For example, Zenodo provides a comprehensive API documentation that explains how to access the metadata and download datasets from Zenodo. They also provide code examples in multiple programming languages, such as Python, JavaScript, and cURL (but sadly not R).
+
+I would consider a repository that provides an API to be more accessible than one that does not provide an API. I recommend that you check with the repository to see if they provide an API for accessing your data programatically.
+:::
+
+## "I" in FAIR Data
+
+Key Questions to Ask to Make Your Data Interoperable:
+
+::: incremental
+- What format should we use to store the data?
+- Are any of file formats proprietary?
+- Are there standards within my field/discipline that we should follow?
+:::
+
+::: notes
+Putting the "I" in FAIR data is all about making your data interoperable with others. There are three main ways that you can make your data interoperable: by choosing the right format, avoiding proprietary file formats, and following standards within your field or discipline.
+:::
+
+## Examples of Interoperable Data
+
+## Why make data FAIR (from a grad student's perspective)?
+
+Top Reasons:
+::: incremental
+1. Your Future Self Will Thank You
+2. Others Can Reuse and Build Upon Your Work
+3. Required by the Funder
+:::
+
+::: notes
+My number one reason to work towards making my data FAIR is that it encourages good data management practices, such as documenting your data with rich metadata.
+
+I will describe a common scenario for graduate students. It happened to me and most of my friends in grad school. Your plate is very full attending classes, completing coursework, conducting your research, and writing your thesis or dissertation. You find that you have little time to spend documenting your data. Then you graduate, start a new job, and find that you don't have any time to adapt your thesis into a journal article. Sometime down the road, you find the time and motivation to publish your work, but you realize that you need to clean up your data or adjust your model, but nothing is documented!. You've forgotten the meaning of certain columns, your code is poorly written and doesn't work. Reaquanting youself with your data and analysis code can be a daunting task. This is where the FAIR principles can help. By making your data FAIR, you are more likely to have rich metadata that will help you understand your data and analysis code in the future. Your future self will thank you.
+
+The second reason to make your data FAIR is that it allows others to reuse and build upon your work. This is especially important for graduate students who are working on a limited timeline. By making your data FAIR, you are more likely to have rich metadata that will help others understand your data and analysis code. This will allow others to reuse your data and analysis code, which can lead to new collaborations and publications. This can benefit your career by increasing your visibility and impact in your field. I have also seen scenarios where a graduate student has left the lab and the advisor wants to continue the work, but they can't because the data and analysis code are not documented. Believe me when I say that you do not want to be the person that tries to salvage a project with poorly documented data and analysis code.
+
+Lastly, making your data FAIR may be required by your funder (at least to some degree). Many funding agencies require that you share your data at the end of the project as a condition of funding. This is especially true for federal funding agencies, such as the National Science Foundation (NSF) and the National Institutes of Health (NIH). Some funders require that you archive data produced under the award in a specific repository, such as the USDA's AgData Commons. Each funder typically has their own requirements, so be sure to check with your advisor or the funder's website for specific requirements.
+:::
+
+## My Advice for Grad Students
+
+::: incremental
+- Write a Data Management Plan
+- Discuss with your Advisor Sooner Rather Than Later
+- Don't Wait Until the End of Your Project to Make Your Data FAIR
+:::
+
+::: notes
+My advice to you is to write your own data management plan. This will help you think through the steps you need to take to make your data FAIR. It will also help you communicate your plan to your advisor and other members of your lab. You can use the DMPTool to help you write your data management plan. The DMPTool is a free online tool that helps you create data management plans that meet the requirements of specific funding agencies.
+
+I also recommend that you discuss your data management plan with your advisor sooner rather than later. Your advisor may also have specific requirements specified by the funder, such as where the data must be archived, so be sure to check with them before you start.
+
+Lastly, I recommend that you don't wait until the end of your project to make your data FAIR. Start today. It's much easier to make your data FAIR as you go along, rather than trying to do it all at once at the end of your project. If you wait until the end of your project, you may find that you don't have the time or motivation to make your data FAIR.
+:::
+
+## Links to Additional Resources
+
+https://datamgmtinedresearch.com/
+https://www.nlm.nih.gov/NIHbmic/generalist_repositories.html
+https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
