@@ -1,9 +1,34 @@
+---
 title: "Dr. Short/Dr. Martin Lab Meeting - Putting FAIR Data into Practice"
 date: "October 11, 2024"
 author: "Andrew Antaya - Data Coordinator"
 format:
   pptx:
-    reference-doc: ../templates/presentations/Wide-format-SDSU-PowerPoint-Template.pptx
+    reference-doc: Wide-format-SDSU-PowerPoint-Template.pptx
 editor: visual
 ---
+
+## Agenda
+
+::: incremental
+1. My Background
+2. Brief Refresher on FAIR Data
+4. Why work towards FAIR Data?
+5. Implementing the "F" in FAIR Data
+6. Implementing The "A" in FAIR Data
+7. Implementing The "I" in FAIR Data
+8. Implementing The "R" in FAIR Data
+:::
+
+## My Background
+
+::: incremental
+- M.S. in Natural Resources, emphasis in Wildlife Ecology
+- B.S. in Fish and Biology, minor in GIS
+- Worked as a Research Specialist for University of Arizona from 2018-2024
+- Hired as Data Coordinator for the SDSU Climate Smart Project in July 2024
+:::
+
+## FAIR Data Refresher
+
 
