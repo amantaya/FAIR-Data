@@ -69,6 +69,25 @@ Is there enough metadata for other researchers to understand and reuse your data
 - There are many options, no one choice is best
 :::
 
+## Why make data FAIR (from a grad student's perspective)?
+
+Top Reasons:
+::: incremental
+1. Your Future Self Will Thank You
+2. Others Can Reuse and Build Upon Your Work
+3. Required by the Funder
+:::
+
+::: notes
+My number one reason to work towards making my data FAIR is that it encourages good data management practices, such as documenting your data with rich metadata.
+
+I will describe a common scenario for graduate students. It happened to me and most of my friends in grad school. Your plate is very full attending classes, completing coursework, conducting your research, and writing your thesis or dissertation. You find that you have little time to spend documenting your data. Then you graduate, start a new job, and find that you don't have any time to adapt your thesis into a journal article. Sometime down the road, you find the time and motivation to publish your work, but you realize that you need to clean up your data or adjust your model, but nothing is documented!. You've forgotten the meaning of certain columns, your code is poorly written and doesn't work. Reaquanting youself with your data and analysis code can be a daunting task. This is where the FAIR principles can help. By making your data FAIR, you are more likely to have rich metadata that will help you understand your data and analysis code in the future. Your future self will thank you.
+
+The second reason to make your data FAIR is that it allows others to reuse and build upon your work. This is especially important for graduate students who are working on a limited timeline. By making your data FAIR, you are more likely to have rich metadata that will help others understand your data and analysis code. This will allow others to reuse your data and analysis code, which can lead to new collaborations and publications. This can benefit your career by increasing your visibility and impact in your field. I have also seen scenarios where a graduate student has left the lab and the advisor wants to continue the work, but they can't because the data and analysis code are not documented. Believe me when I say that you do not want to be the person that tries to salvage a project with poorly documented data and analysis code.
+
+Lastly, making your data FAIR may be required by your funder (at least to some degree). Many funding agencies require that you share your data at the end of the project as a condition of funding. This is especially true for federal funding agencies, such as the National Science Foundation (NSF) and the National Institutes of Health (NIH). Some funders require that you archive data produced under the award in a specific repository, such as the USDA's AgData Commons. Each funder typically has their own requirements, so be sure to check with your advisor or the funder's website for specific requirements.
+:::
+
 ## "F" in FAIR Data
 
 Key Questions to Ask to Make Your Data Findable:
@@ -287,25 +306,6 @@ Be warned, metadata standards have a steep learning curve. I would recommend tha
 ## Metadata Standards Table
 
 ![Metadata Standards Table from Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/img/fig8-20.PNG)
-
-## Why make data FAIR (from a grad student's perspective)?
-
-Top Reasons:
-::: incremental
-1. Your Future Self Will Thank You
-2. Others Can Reuse and Build Upon Your Work
-3. Required by the Funder
-:::
-
-::: notes
-My number one reason to work towards making my data FAIR is that it encourages good data management practices, such as documenting your data with rich metadata.
-
-I will describe a common scenario for graduate students. It happened to me and most of my friends in grad school. Your plate is very full attending classes, completing coursework, conducting your research, and writing your thesis or dissertation. You find that you have little time to spend documenting your data. Then you graduate, start a new job, and find that you don't have any time to adapt your thesis into a journal article. Sometime down the road, you find the time and motivation to publish your work, but you realize that you need to clean up your data or adjust your model, but nothing is documented!. You've forgotten the meaning of certain columns, your code is poorly written and doesn't work. Reaquanting youself with your data and analysis code can be a daunting task. This is where the FAIR principles can help. By making your data FAIR, you are more likely to have rich metadata that will help you understand your data and analysis code in the future. Your future self will thank you.
-
-The second reason to make your data FAIR is that it allows others to reuse and build upon your work. This is especially important for graduate students who are working on a limited timeline. By making your data FAIR, you are more likely to have rich metadata that will help others understand your data and analysis code. This will allow others to reuse your data and analysis code, which can lead to new collaborations and publications. This can benefit your career by increasing your visibility and impact in your field. I have also seen scenarios where a graduate student has left the lab and the advisor wants to continue the work, but they can't because the data and analysis code are not documented. Believe me when I say that you do not want to be the person that tries to salvage a project with poorly documented data and analysis code.
-
-Lastly, making your data FAIR may be required by your funder (at least to some degree). Many funding agencies require that you share your data at the end of the project as a condition of funding. This is especially true for federal funding agencies, such as the National Science Foundation (NSF) and the National Institutes of Health (NIH). Some funders require that you archive data produced under the award in a specific repository, such as the USDA's AgData Commons. Each funder typically has their own requirements, so be sure to check with your advisor or the funder's website for specific requirements.
-:::
 
 ## My Advice for Grad Students
 
