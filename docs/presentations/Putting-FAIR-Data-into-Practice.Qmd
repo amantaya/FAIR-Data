@@ -14,7 +14,7 @@ editor: visual
 ::: incremental
 1. My Background
 2. Brief Refresher on FAIR Data
-4. Why work towards FAIR Data?
+4. Why Make Data FAIR?
 5. Implementing the "F" in FAIR Data
 6. Implementing The "A" in FAIR Data
 7. Implementing The "I" in FAIR Data
@@ -32,34 +32,16 @@ editor: visual
 - Hired as Data Coordinator for the SDSU Climate Smart Project in July 2024
 :::
 
-## The Data Management Lifecycle
+##
 
 ![OSF Data Management Lifecycle](https://pose.open.ubc.ca/files/2020/10/research_lifecycle.original.png)
 
 ## FAIR Data Refresher
 
 **F**indable
-
-How can other researchers find your data?
-
-
-## FAIR Data Refresher
-
 **A**ccessible
-
-Can your data be easily accessed through a user interface or programatically by a machine?
-
-## FAIR Data Refresher
-
 **I**nteroperable
-
-Is your data in a format that can be easily used by others?
-
-## FAIR Data Refresher
-
 **R**eusable
-
-Is there enough metadata for other researchers to understand and reuse your data?
 
 ## Key Aspects of FAIR
 
@@ -69,12 +51,16 @@ Is there enough metadata for other researchers to understand and reuse your data
 - There are many options, no one choice is best
 :::
 
+::: notes
+The important thing about the FAIR principles is that they don't tell you how to make your data FAIR. Instead, think of the FAIR principles as guidelines, not rules. It's up to you (and your advisor) to make these decisions. There are many options, and no one choice is best. In this presentation, I will present some options for making your data FAIR, but it will be up to you (and your advisor) to decide which options are best for your project.
+:::
+
 ## Why make data FAIR (from a grad student's perspective)?
 
-Top Reasons:
+(My) Top Reasons:
 ::: incremental
 1. Your Future Self Will Thank You
-2. Others Can Reuse and Build Upon Your Work
+2. Others Can Reuse and Build Upon Your Work (Which is Good for Your Career)
 3. Required by the Funder
 :::
 
@@ -83,7 +69,9 @@ My number one reason to work towards making my data FAIR is that it encourages g
 
 I will describe a common scenario for graduate students. It happened to me and most of my friends in grad school. Your plate is very full attending classes, completing coursework, conducting your research, and writing your thesis or dissertation. You find that you have little time to spend documenting your data. Then you graduate, start a new job, and find that you don't have any time to adapt your thesis into a journal article. Sometime down the road, you find the time and motivation to publish your work, but you realize that you need to clean up your data or adjust your model, but nothing is documented!. You've forgotten the meaning of certain columns, your code is poorly written and doesn't work. Reaquanting youself with your data and analysis code can be a daunting task. This is where the FAIR principles can help. By making your data FAIR, you are more likely to have rich metadata that will help you understand your data and analysis code in the future. Your future self will thank you.
 
-The second reason to make your data FAIR is that it allows others to reuse and build upon your work. This is especially important for graduate students who are working on a limited timeline. By making your data FAIR, you are more likely to have rich metadata that will help others understand your data and analysis code. This will allow others to reuse your data and analysis code, which can lead to new collaborations and publications. This can benefit your career by increasing your visibility and impact in your field. I have also seen scenarios where a graduate student has left the lab and the advisor wants to continue the work, but they can't because the data and analysis code are not documented. Believe me when I say that you do not want to be the person that tries to salvage a project with poorly documented data and analysis code.
+I have also seen scenarios where a graduate student has left the lab and the advisor wants to continue the work, but they can't because the data and analysis code are not documented. Believe me when I say that you do not want to be the person that tries to salvage a project with poorly documented data and analysis code.
+
+The second reason to make your data FAIR is that it allows others to reuse and build upon your work. This is especially important for graduate students who are working on a limited timeline. By making your data FAIR, you are more likely to have rich metadata that will help others understand your data and analysis code. This will allow others to reuse your data and analysis code, which can lead to new collaborations and publications. This can benefit your career by increasing your visibility and impact in your field. If you are planning on pursuing a career in academia, citations are important for getting hired and promoted. Making your data FAIR can increase the visibility and impact of your work, which can lead to more citations.
 
 Lastly, making your data FAIR may be required by your funder (at least to some degree). Many funding agencies require that you share your data at the end of the project as a condition of funding. This is especially true for federal funding agencies, such as the National Science Foundation (NSF) and the National Institutes of Health (NIH). Some funders require that you archive data produced under the award in a specific repository, such as the USDA's AgData Commons. Each funder typically has their own requirements, so be sure to check with your advisor or the funder's website for specific requirements.
 :::
