@@ -27,14 +27,14 @@ editor: visual
 
 ::: incremental
 - M.S. in Natural Resources, emphasis in Wildlife Ecology
-- B.S. in Fish and Biology, minor in GIS
-- Worked as a Research Specialist for University of Arizona from 2018-2024
+- B.S. in Fish and Wildlife Biology, minor in GIS
+- Worked as a Research Specialist (Rangelands) for University of Arizona from 2018-2024
 - Hired as Data Coordinator for the SDSU Climate Smart Project in July 2024
 :::
 
 ##
 
-![OSF Data Management Lifecycle](https://pose.open.ubc.ca/files/2020/10/research_lifecycle.original.png)
+![OSF Data Management Lifecycle](../attachments/research_lifecycle.original.png){#id .class width=1000px height=800px}
 
 ## FAIR Data Refresher
 
