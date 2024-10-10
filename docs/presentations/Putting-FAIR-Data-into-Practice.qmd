@@ -34,19 +34,26 @@ editor: visual
 
 ##
 
-![OSF Data Management Lifecycle](../attachments/research_lifecycle.original.png)
+![OSF Research Lifecycle](../attachments/research_lifecycle.original.png)
+
+::: notes
+
+This is a diagram of the research lifecycle from the Open Science Framework (OSF). The research lifecycle is a conceptual model that describes the stages of a research project, from planning to publication. I included this diagram to highlight some of the digital tools and where they fit into the research lifecycle. For example, the DMPTool is used during the planning stage to create a data management plan, while Dryad is used during the publication stage to archive data. I will be discussing these tools and others in more detail later in the presentation.
+:::
 
 ## FAIR Data Refresher
 
-**F**indable
-**A**ccessible
-**I**nteroperable
-**R**eusable
+:::incremental
+- **F**indable
+- **A**ccessible
+- **I**nteroperable
+- **R**eusable
+:::
 
 ## Key Aspects of FAIR
 
 ::: incremental
-- FAIR is a set of principles, *not an implmentation*
+- FAIR is a set of principles, *not an implementation*
 - It's up to you (and your advisor) to make these decisions
 - There are many options, no one choice is best
 :::
@@ -55,9 +62,10 @@ editor: visual
 The important thing about the FAIR principles is that they don't tell you how to make your data FAIR. Instead, think of the FAIR principles as guidelines, not rules. It's up to you (and your advisor) to make these decisions. There are many options, and no one choice is best. In this presentation, I will present some options for making your data FAIR, but it will be up to you (and your advisor) to decide which options are best for your project.
 :::
 
-## Why make data FAIR (from a grad student's perspective)?
+## Why make data FAIR?
 
 (My) Top Reasons:
+
 ::: incremental
 1. Your Future Self Will Thank You
 2. Others Can Reuse and Build Upon Your Work (Which is Good for Your Career)
@@ -89,6 +97,7 @@ Key Questions to Ask to Make Your Data Findable:
 ## Examples of Findable Data
 
 General Purpose Repositories:
+
 ::: incremental
 - Dryad (datadryad.org)
 - Dataverse (dataverse.org)
@@ -139,8 +148,8 @@ NIH maintains lists of domain-specific repositories that you can use to archive 
 Key Questions to Ask to Make Your Data Accessible:
 
 ::: incremental
-Can my data be accessed through an user interface on a website?
-Can my data be access programatically by a machine (through an API)?
+- Can my data be accessed through an user interface on a website?
+- Can my data be access programatically by a machine (through an API)?
 :::
 
 ::: notes
@@ -151,7 +160,7 @@ Accessiblility can be easily accomplished by uploading your data to a repository
 
 ## Examples of Accessible Data on a Website
 
-![Screenshot Example of Accessible Dataset on Dryad's Website](../attachments/example-accessible-dryad-dataset.jpg)
+![Screenshot of Accessible Dataset on Dryad's Website](../attachments/example-accessible-dryad-dataset.jpg)
 
 ::: notes
 Almost all repositories provide a user interface that allows others to download your data. For example, here is an example of a dataset on Dryad. You can see that the dataset is well-documented with rich metadata, such as the title, authors, abstract, keywords, and license.
@@ -159,7 +168,7 @@ Almost all repositories provide a user interface that allows others to download 
 
 ## Examples of Accessible Data Programatically
 
-![Screenshot Example of Accessible Data Through Dryad's API](../attachments/example-accessible-dryad-api.jpg)
+![Screenshot of Accessible Data Through Dryad's API](../attachments/example-accessible-dryad-api.jpg)
 
 ::: notes
 Increasingly, most repositories also provide an API that allows others to access your data programatically. For example, Dryad provides an API that allows others to access the metadata and download datasets from Dryad.
@@ -169,7 +178,7 @@ As the amount of publicly available data continues to grow, APIs are becoming mo
 
 ## Examples of Accessible Data Programatically
 
-![Screenshot Example of Accessible Data Through Zenodo's API](../attachments/example-accessible-zenodo-api.jpg)
+![Screenshot of Accessible Data Through Zenodo's API](../attachments/example-accessible-zenodo-api.jpg)
 
 ::: notes
 Most of the general-purpose repositories also have good documentation for their APIs. For example, Zenodo provides a comprehensive API documentation that explains how to access the metadata and download datasets from Zenodo. They also provide code examples in multiple programming languages, such as Python, JavaScript, and cURL (but sadly not R).
@@ -214,9 +223,9 @@ When choosing what format to archive your data in, I recommend that you choose a
 ::: notes
 Examples of proprietary file formats include Microsoft Excel (.xls, .xlsx), STATA, and SPSS. These file formats are proprietary in that they are owned by a specific company and require a software license to access and use the data. Proprietary file formats can make your data less interoperable with others, especially if they require expensive software licenses. Try to avoid archiving your data in a proprietary file format if possible.
 
-Now that's not to say you can't use STATA and SPSS file formats during your analysis. STATA and SPSS files have some advatanges over CSV files. However, I recommend that you convert your data to a non-proprietary format before archiving it, for example, by converting your data from a STATA file to a CSV file before archiving it. This will make your data more interoperable with others.
+Microsoft Excel, while a proprietary file format, is widely used and supported and can be a good choice for archiving your data. However, be aware that Excel has some limitations, such as the number of rows and columns that it can handle. If you are working with a large dataset, you may want to consider archiving your data in a different format, such as CSV.  I generally recommend CSV files over Excel files in almost all situations.
 
-Microsoft Excel, while a proprietary file format, is widely used and supported and can be a good choice for archiving your data. However, be aware that Excel has some limitations, such as the number of rows and columns that it can handle. If you are working with a large dataset, you may want to consider archiving your data in a different format, such as CSV.
+Now that's not to say you can't use STATA and SPSS file formats during your analysis. STATA and SPSS files have some advatanges over CSV files. However, I recommend that you convert your data to a non-proprietary format before archiving it, for example, by converting your data from a STATA file to a CSV file. This will make your data more interoperable with others.
 
 In other situations, there simply isn't a way around proprietary file formats. For example, if you are working with a proprietary software program that only outputs data in a proprietary format, you may have no choice but to archive your data in a proprietary format. In this case, I recommend that you provide detailed instructions on how to access and use the data in the README file that accompanies your data.
 :::
@@ -231,13 +240,13 @@ Key Questions to Ask to Make Your Data Reusable:
 :::
 
 ::: notes
-Perhaps the most important aspect of FAIR data is making your data reusable by others (including your future self). There are two main ways that you can make your data reusable: by providing rich metadata and following metadata standards.
+Perhaps the most important aspect of FAIR data is making your data reusable by others (including your future self). If your data is not reusable by others, then what’s the point of making it findable, accessible, and interoperable?
+
+There are two main ways that you can make your data reusable: by providing rich metadata and following metadata standards.
 
 Metadata is data about data. It describes the content, quality, condition, and other characteristics of your data. Metadata can include information such as the title, authors, abstract, keywords, license, and provenance of your data. Metadata can be stored in a README file that accompanies your data or it can be stored as comments in your data file. I prefer to store metadata in a README file that accompanies my data, as it keeps the metadata separate from the data and makes it easier to update the metadata without having to update the data.
 
-Of all of the acronyms in FAIR, I think that the "R" is the most important. If your data is not reusable by others, then what's the point of making it findable, accessible, and interoperable? I also think reusability requires the most amount of work.
-
-Adding metadata during your project reduces your "data curation debt". Data curation debt is the amount of work that you need to do to make your data FAIR at the end of your project. The more metadata you add during your project, the less data curation debt you will have at the end of your project. I recommend that you add metadata as you go along, rather than waiting until the end of your project to add metadata.
+Adding metadata during your project reduces your “data curation debt”. Data curation debt is the amount of work that you need to do to make your data FAIR at the end of your project. The more metadata you add during your project, the less data curation debt you will have at the end of your project. I recommend that you add metadata as you go along, rather than waiting until the end of your project to add metadata.
 :::
 
 ## Levels of Metadata
@@ -251,26 +260,26 @@ Adding metadata during your project reduces your "data curation debt". Data cura
 ## Project Level Metadata
 
 ::: incremental
-- Data Management Plan
-- Data Sources Catalog
-- Roles and Responsibilities
-- Research Protocol
-- Standard Operating Proceedures (SOPs)
+- [Data Management Plan](https://datamgmtinedresearch.com/dmp)
+- [Data Sources Catalog](https://datamgmtinedresearch.com/dmp#dmp-catalog)
+- [Roles and Responsibilities](https://datamgmtinedresearch.com/roles)
+- [Research Protocol](https://datamgmtinedresearch.com/document#document-protocol)
+- [Standard Operating Proceedures](https://datamgmtinedresearch.com/document#document-sop)
 :::
 
 ## Dataset Level Metadata
 
 ::: incremental
-- README
-- Changelog
-- Data Cleaning Plan
+- [README](https://datamgmtinedresearch.com/document#document-read)
+- [Changelog](https://datamgmtinedresearch.com/document#document-change)
+- [Data Cleaning Plan](https://datamgmtinedresearch.com/document#document-plan)
 :::
 
 ## Variable Level Metadata
 
 ::: incremental
-- Data Dictionary
-- Codebook
+- [Data Dictionary](https://datamgmtinedresearch.com/document#document-dictionary)
+- [Codebook](https://datamgmtinedresearch.com/document#document-codebook)
 :::
 
 ## Metadata Standards
@@ -295,27 +304,37 @@ Be warned, metadata standards have a steep learning curve. I would recommend tha
 
 ![Metadata Standards Table from Data Management in Large-Scale Education Research](https://datamgmtinedresearch.com/img/fig8-20.PNG)
 
+## Key Takeaways:
+
+::: incremental
+- **Add Metadata to Your Data**
+- Choose a repository to archive your data
+- Check if the repository requires specific metadata standards (e.g., EML)
+- Check if the funder has specific requirements for data archiving (e.g., AgData Commons)
+- Archive your data in a widely used and non-proprietary file format (e.g., CSV)
+:::
+
 ## My Advice for Grad Students
 
 ::: incremental
-- Write a Data Management Plan
-- Discuss with your Advisor Sooner Rather Than Later
+- Write a Data Management Plan (DMP) - Think Through the Steps to Make Your Data FAIR
+- Discuss the DMP with your Advisor Sooner Rather Than Later
 - Don't Wait Until the End of Your Project to Make Your Data FAIR
 :::
 
 ::: notes
 My advice to you is to write your own data management plan. This will help you think through the steps you need to take to make your data FAIR. It will also help you communicate your plan to your advisor and other members of your lab. You can use the DMPTool to help you write your data management plan. The DMPTool is a free online tool that helps you create data management plans that meet the requirements of specific funding agencies.
 
-I also recommend that you discuss your data management plan with your advisor sooner rather than later. Your advisor may also have specific requirements specified by the funder, such as where the data must be archived, so be sure to check with them before you start.
+I also recommend that you discuss your data management plan with your advisor sooner rather than later. Your advisor may also have specific requirements specified by the funder, such as where the data must be archived, so be sure to check with them before you start or check the funder's website for more information.
 
 Lastly, I recommend that you don't wait until the end of your project to make your data FAIR. Start today. It's much easier to make your data FAIR as you go along, rather than trying to do it all at once at the end of your project. If you wait until the end of your project, you may find that you don't have the time or motivation to make your data FAIR.
 :::
 
 ## Links to Additional Resources
 
-DMPTool - https://dmptool.org/
-How Should I Include Dryad in my DMP? https://blog.datadryad.org/2023/07/13/for-researchers-including-dryad-in-your-data-management-plan/
-**Data Management in Large-Scale Education Research**: https://datamgmtinedresearch.com/
-General Repositories - https://www.nlm.nih.gov/NIHbmic/generalist_repositories.html
-Specialized Repositories - https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
-EML Creation Tool - https://ezeml.edirepository.org/
+- **Data Management in Large-Scale Education Research**: https://datamgmtinedresearch.com/
+- DMPTool - https://dmptool.org/
+- How Should I Include Dryad in my DMP? https://blog.datadryad.org/2023/07/13/for-researchers-including-dryad-in-your-data-management-plan/
+- General Repositories - https://www.nlm.nih.gov/NIHbmic/generalist_repositories.html
+- Specialized Repositories - https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
+- EML Creation Tool - https://ezeml.edirepository.org/
