@@ -34,7 +34,7 @@ editor: visual
 
 ##
 
-![OSF Data Management Lifecycle](../attachments/research_lifecycle.original.png){#id .class width=1000px height=800px}
+![OSF Data Management Lifecycle](../attachments/research_lifecycle.original.png)
 
 ## FAIR Data Refresher
 
