@@ -1,5 +1,6 @@
 ---
-title: "Dr. Short & Dr. Martin /n Lab Meeting - Putting FAIR Data into Practice"
+title: "Putting FAIR Data into Practice"
+event: "Dr. Short & Dr. Martin Lab Meeting"
 date: "October 11, 2024"
 author: "Andrew Antaya - Data Coordinator"
 format:
@@ -110,6 +111,7 @@ Domain-Specific Repositories:
 - AgData Commons (agdatacommons.nal.usda.gov)
 - ICPSR (icpsr.umich.edu)
 - BioLINCC (biolincc.nhlbi.nih.gov)
+:::
 
 ::: notes
 AgData Commons: A data repository run by the USDA that makes data produced by USDA research available to the public.
@@ -200,6 +202,7 @@ When choosing what format to archive your data in, I recommend that you choose a
 - Microsoft Excel (.xls, .xlsx)
 - STATA
 - SPSS
+:::
 
 ::: notes
 Examples of proprietary file formats include Microsoft Excel (.xls, .xlsx), STATA, and SPSS. These file formats are proprietary in that they are owned by a specific company and require a software license to access and use the data. Proprietary file formats can make your data less interoperable with others, especially if they require expensive software licenses. Try to avoid archiving your data in a proprietary file format if possible.
@@ -278,7 +281,7 @@ I recommend that you use a metadata standard that is widely used and supported b
 
 Additionally, where you choose to archive your data may have specific requirements regarding the metadata standard. Check with the repository to see if they have specific requirements for the metadata standard that you should use.
 
-Be warned, metadata standards have a steep learning curve. I would recommend that you first identify which metadata standard is relevant to your field, and then find a digital tool that can help you create metadata in that standard. For example, I use the EML templating tool to create EML metadata for my data. I have included links to these tools in the Additional Resources section at the end of this presentation.
+Be warned, metadata standards have a steep learning curve. I would recommend that you first identify which metadata standard is relevant to your field, and then find a digital tool that can help you create metadata in that standard. For example, I use the ezEML tool to create EML metadata for my data. I have included links to these tools in the Additional Resources section at the end of this presentation.
 :::
 
 ## Metadata Standards Table
@@ -323,8 +326,8 @@ Lastly, I recommend that you don't wait until the end of your project to make yo
 ## Links to Additional Resources
 
 DMPTool - https://dmptool.org/
-How SHould I Include Dryad in my DMP? https://blog.datadryad.org/2023/07/13/for-researchers-including-dryad-in-your-data-management-plan/
-Data Management in Large-Scale Education Research eBook: https://datamgmtinedresearch.com/
+How Should I Include Dryad in my DMP? https://blog.datadryad.org/2023/07/13/for-researchers-including-dryad-in-your-data-management-plan/
+**Data Management in Large-Scale Education Research**: https://datamgmtinedresearch.com/
 General Repositories - https://www.nlm.nih.gov/NIHbmic/generalist_repositories.html
 Specialized Repositories - https://www.nlm.nih.gov/NIHbmic/domain_specific_repositories.html
 EML Creation Tool - https://ezeml.edirepository.org/
